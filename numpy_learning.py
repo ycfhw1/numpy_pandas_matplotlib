@@ -52,4 +52,6 @@ print(z)
 # 自定义全1矩阵
 x = np.ones([2,2], dtype = int)
 print(x)
-np
+x=(1,2,3)
+y=np.asarray(x)
+print(y)
