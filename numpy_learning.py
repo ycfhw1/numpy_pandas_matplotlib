@@ -44,3 +44,11 @@ print(b.itemsize)
 #flags用来查看内存中的信息，入门基本没啥用
 c=np.array([1,2,3,4,5])
 print(c.flags)
+x = np.empty([3,2], dtype = int)
+print (x)
+#自定义零矩阵
+z = np.zeros((2,2), dtype = [('x', 'i4'), ('y', 'i4')])
+print(z)
+# 自定义全1矩阵
+x = np.ones([2,2], dtype = int)
+print(x)
