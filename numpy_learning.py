@@ -55,3 +55,10 @@ print(x)
 x=(1,2,3)
 y=np.asarray(x)
 print(y)
+#arange函数自动生成数组返回ndarray函数
+z=np.arange(5)
+print(z)
+#linspace和arange区别：linspace从1开始，而且可以指定步长，是arange特殊形式
+a = np.linspace(1,10,10)
+print(a)
+#logspace用于创建等比数列
