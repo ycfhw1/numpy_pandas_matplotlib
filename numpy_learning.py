@@ -19,7 +19,6 @@ print(dt2)
 dt3 = np.dtype([('age',np.int32)])
 e= np.array([(10,),(20,),(30,)], dtype = dt3) #dtype是用来定义数据类型的
 print(e)
-import numpy as np
 dt4 = np.dtype([('age',np.int32)])
 a = np.array([(10,),(20,),(30,)], dtype = dt4)
 print(a['age'])
@@ -42,3 +41,6 @@ a=np.array([1,2,3,4,5],dtype=np.int8)
 print(a.itemsize)
 b=np.array([1,2,3,4,5],dtype=np.int32)
 print(b.itemsize)
+#flags用来查看内存中的信息，入门基本没啥用
+c=np.array([1,2,3,4,5])
+print(c.flags)
