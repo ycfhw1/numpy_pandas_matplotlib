@@ -58,7 +58,12 @@ print(y)
 #arange函数自动生成数组返回ndarray函数
 z=np.arange(5)
 print(z)
-#linspace和arange区别：linspace从1开始，而且可以指定步长，是arange特殊形式
-a = np.linspace(1,10,10)
+#linspace和arange区别：linspace从1开始，而且可以指定步长，是arange特殊形式，最后一个是指均分成几段
+a = np.linspace(1,10,3)
 print(a)
 #logspace用于创建等比数列
+a = np.logspace(1.0,  2.0, num =  10)
+print (a)
+#base用来指定底数
+a = np.logspace(0,9,10,base=2)
+print (a)
